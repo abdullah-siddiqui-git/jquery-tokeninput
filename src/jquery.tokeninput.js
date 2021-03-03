@@ -1038,6 +1038,8 @@
                   }
 
                   // Make the request
+                  debugger;
+                  
                   $.ajax(ajax_params);
               } else if($(input).data("settings").local_data) {
                   // Do the search through local data
