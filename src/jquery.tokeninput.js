@@ -1038,8 +1038,6 @@
                   }
 
                   // Make the request
-                  debugger;
-
                   if (settings.searchFunction) {
                     settings.searchFunction(ajax_params)
                   } else {
