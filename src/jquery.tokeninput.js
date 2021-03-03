@@ -882,7 +882,7 @@
                   .mouseover(function (event) {
                       select_dropdown_item($(event.target).closest("li"));
                   })
-                  .pointerdown(function (event) {
+                  .click(function (event) {
                       add_token($(event.target).closest("li").data("tokeninput"));
                       hiddenInput.change();
                       return false;
