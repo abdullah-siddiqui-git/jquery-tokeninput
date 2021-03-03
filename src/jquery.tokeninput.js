@@ -879,9 +879,9 @@
               dropdown.empty();
               var dropdown_ul = $("<ul/>")
                   .appendTo(dropdown)
-                  // .mouseover(function (event) {
-                  //     select_dropdown_item($(event.target).closest("li"));
-                  // })
+                  .mouseover(function (event) {
+                      select_dropdown_item($(event.target).closest("li"));
+                  })
                   .mousedown(function (event) {
                       add_token($(event.target).closest("li").data("tokeninput"));
                       hiddenInput.change();
