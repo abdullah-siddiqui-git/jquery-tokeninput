@@ -1039,8 +1039,12 @@
 
                   // Make the request
                   debugger;
-                  
-                  $.ajax(ajax_params);
+
+                  if (settings.searchFunction) {
+                    settings.searchFunction(ajax_params)
+                  } else {
+                    $.ajax(ajax_params);
+                  }
               } else if($(input).data("settings").local_data) {
                   // Do the search through local data
                   var results = $.grep($(input).data("settings").local_data, function (row) {
